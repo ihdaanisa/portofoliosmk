@@ -823,9 +823,9 @@ box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     animation: html 2s;
     width: 50%;
   }
-  .css {
-   animation: css 2s;
-   width: 80%;
+  .java {
+   animation: java 2s;
+   width: 30%;
   }
   .js{
     animation: js 2s;
@@ -840,7 +840,7 @@ box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     }
   }
   .blender {
-    animation: html 2s;
+    animation: blender 2s;
     width: 20%;
   }
   @keyframes blender{
@@ -849,6 +849,15 @@ box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     }
     to{
       width: 20%;
+    }
+  }
+  
+  @keyframes java{
+    from {
+      width: 0;
+    }
+    to{
+      width: 30%;
     }
   }
 .text {

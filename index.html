@@ -11,12 +11,12 @@
  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-
   <script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -44,9 +44,9 @@
                 
                    
              <ul>
-                <li><a href="https://www.faceboock.com/ihda.a.ulfa" target="blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCDXuUHNqN6PdK7XpBU0nZFg" target="blank"><i class="fab fa-youtube-square"></i></a></li>
-                <li><a href=" https://instagram.com/ihdaanisaulfa_3?utm_medium+copy_link" target="blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ihda.a.ulfa" target="_blank"><i class="bi bi-facebook"></i></a></li>
+    <li><a href="https://www.youtube.com/channel/UCDXuUHNqN6PdK7XpBU0nZFg" target="_blank"><i class="bi bi-youtube"></i></a></li>
+    <li><a href="https://instagram.com/ihdaanisaulfa_3?utm_medium=copy_link" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 <audio id="audio">
                     <source src="audio/symphony.mp3" type="audio/mpeg">
                 </audio>
@@ -250,6 +250,22 @@
                 <span class="skill-percent">50%</span>
             </div>
             </div>
+            <div class="skill">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar"></div>
+                <div class="html skill-fill">
+                <span class="skill-percent">50%</span>
+            </div>
+            </div>
+            
+            
+            <div class="skill">
+                <div class="skill-title">JAVASCRIPT</div>
+                <div class="skill-bar"></div>
+                <div class="java skill-fill">
+                <span class="skill-percent">30%</span>
+            </div>
+            </div>
             
               <div class="skill">
                   <div class="skill-title">COREL DRAW</div>
@@ -307,6 +323,7 @@
     <div class="item active" date-name="all">ALL</div>
     <div class="item" date-name="Photoshop">PHOTOSHOP</div>
     <div class="item" date-name="Corel Draw">COREL DRAW</div>
+    <div class="item" date-name="Blender 3D">BLENDER 3D</div>
 </div>
 </nav>
 <!-- filter image -->
@@ -326,6 +343,9 @@
 <div class="image" date-name="Corel Draw"><span><img src="img/pacagingh22.png" alt=""></span></div>
 <div class="image" date-name="Corel Draw"><span><img src="img/kerangka1111.png" alt=""></span></div>
 <div class="image" date-name="Corel Draw"><span><img src="img/kerangka222.png" alt=""></span></div>
+<div class="image" date-name="Blender 3D"><span><img src="img/gelas glossy3.png" alt=""></span></div>
+<div class="image" date-name="Blender 3D"><span><img src="img/AMONG US.png" alt=""></span></div>
+<div class="image" date-name="Blender 3D"><span><img src="img/kursi 3d2.png" alt=""></span></div>
 </div>
 </div>
     </div>
@@ -453,7 +473,6 @@ title.innerHTML = text;
     </div>
 </section>
 
-
 <script>
     $(window).on("load",function(){
         $(".bg-loader").fadeOut(1000);
@@ -465,45 +484,7 @@ title.innerHTML = text;
         <small>DesainMediaInteraktif 2021-2022 - Anisa.</small>
     </div>
 </footer>
-<script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-      setTimeout(startTime, 1000);
-    }
-    
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    </script>
- <script>
-     let section = document.querySelectorAll('section');
-     let ulLinks =document.querySelectorAll('header ul li a');
 
-     window.onscroll =() =>{
-         section.forEach(sec =>{
-
-let top = window.scrollY;
-let offset = sec.offsetTop -150;
-let height = sec.offsetHeight;
-let id =sec.getAttribute('id');
-
-if(top >= offset && top <offset + height){
-    ulLinks.forEach(links =>{
-links.classList.remove('active');
-document.querySelector('header ul li a [href*=' + id+']').classList.add ('active');
-    });
-};
-
-         });
-     };
- </script>
   <script src="musik2.js"></script>
   <script src="apps.js"></script>
 <script src="main.js"></script>
